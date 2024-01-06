@@ -91,25 +91,25 @@ const Header = ({create}) => {
                     <form  onSubmit={handleSumbit} >
                         <div className='mt-2'>
                             <label className='text-primary text-left m-7 font-semibold' >Product Category</label>
-                            <input type='text' value={category} placeholder='Product Category' className='ml-4 border-2 p-2 rounded-md text-gray-700' onChange={handleCategory}/><br/>
+                            <input type='text' value={category} placeholder='Product Category' className='lg:w-auto w-60 ml-4 border-2 p-2 rounded-md text-gray-700' onChange={handleCategory}/><br/>
                         </div>
 
                         <div className='mt-2'>
                             <label className='text-primary text-left m-7 font-semibold' >Product Title</label>
-                            <input type='text' value={title} placeholder='Product Title' className='ml-4 border-2 p-2 rounded-md text-gray-700' onChange={handleTitle}/><br/>
+                            <input type='text' value={title} placeholder='Product Title' className='lg:w-auto w-60 ml-4 border-2 p-2 rounded-md text-gray-700' onChange={handleTitle}/><br/>
                         </div>
 
                         <div className='mt-2'>
                             <label className='text-primary text-left m-7 font-semibold' >Product Price</label>
-                            <input type='text' value={price} placeholder='Product Price' className='ml-4 border-2 p-2 rounded-md text-gray-700' onChange={handlePrice}/><br/>
+                            <input type='text' value={price} placeholder='Product Price' className='lg:w-auto w-60 ml-4 border-2 p-2 rounded-md text-gray-700' onChange={handlePrice}/><br/>
                         </div>
 
                         <div className='mt-2'>
                             <label className='text-primary text-left m-7 font-semibold' >Product Picture Link</label>
-                            <input type='text' value={image} placeholder='Product Picture Link' className='ml-4 border-2 p-2 rounded-md text-gray-700' onChange={handleImage}/><br/>
+                            <input type='text' value={image} placeholder='Product Picture Link' className='lg:w-auto w-60 ml-4 border-2 p-2 rounded-md text-gray-700' onChange={handleImage}/><br/>
                         </div>
 
-                        <div className='w-full flex flex-col justify-center items-center lg:justify-around lg:flex-row mt-7'>
+                        <div className='-ml-4 w-full flex flex-col justify-center items-center lg:justify-around lg:flex-row mt-7'>
                             <button type="submit" className='bg-primary text-white p-3 m-2 rounded-full'>Add Product</button>
                         </div>
                     </form>
