@@ -15,6 +15,13 @@ const Header = ({create}) => {
 
   const[showModal, setShowModal] = useState(false);
   // const [newProduct, setNewProduct] = useState({});
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   // event listener
   useEffect(() => {
@@ -83,7 +90,7 @@ const Header = ({create}) => {
         >
           <div className="bg-primary w-28 text-center p-3 rounded-full text-white">
             <button>Create</button>
-            <CreateModal isVisible={showModal} >
+            <CreateModal isVisible={showModal} onClose={handleCloseModal}>
 
             <div>
                 <p className='text-primary font-bold text-2xl p-2 rounded-full mt-2'>Fill in the Product Details</p>

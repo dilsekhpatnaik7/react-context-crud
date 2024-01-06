@@ -87,24 +87,24 @@ const ProductDetails = () => {
 
               <CreateModal isVisible={showModal} onClose={handleCloseModal}>
               <div>
-                    <p className='text-primary font-bold text-2xl p-2 rounded-full mt-2'>Check the Product Details</p>
+                    <p className='text-primary font-bold text-2xl p-2 rounded-full mt-2 text-center'>Check the Product Details</p>
                     <div className='ml-7 text-left'>
                         <form onSubmit={handleEditSubmit}>
                             <div className='mt-2'>
                                 <label className='text-primary text-left m-7 font-semibold' >Product Title</label>
                                 <input  type='text' value={editedTitle} onChange={(e) => {
                                   setEditedTitle(e.target.value)
-                                }} placeholder='Product Title' className='ml-4 border-2 p-2 rounded-md text-gray-700'/><br/>
+                                }} placeholder='Product Title' className='lg:w-auto w-60 ml-4 border-2 p-2 rounded-md text-gray-700'/><br/>
                             </div>
 
                             <div className='mt-2'>
                                 <label className='text-primary text-left m-7 font-semibold' >Product Price</label>
                                 <input  type='text' value={editedPrice} onChange={(e) => {
                                   setEditedPrice(e.target.value)
-                                }} placeholder='Product Price' className='ml-4 border-2 p-2 rounded-md text-gray-700'/><br/>
+                                }} placeholder='Product Price' className='lg:w-auto w-60 ml-4 border-2 p-2 rounded-md text-gray-700'/><br/>
                             </div>
 
-                            <div className='w-full flex flex-col justify-center items-center mt-7'>
+                            <div className='-ml-4 w-full flex flex-col justify-center items-center mt-7'>
                                 <button type="submit" className='bg-primary text-white p-3 m-2 rounded-full'>Edit Product</button>
                             </div>
                         </form>
